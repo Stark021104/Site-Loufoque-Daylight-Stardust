@@ -19,13 +19,12 @@ body {
 /***<!-- header menu horizontal -->***/
 nav {
     width: 100%;
-    height: 10vh;
+    height: 7vh;
 }
 
 nav .main_pages {
     display: flex;
     justify-content: space-around;
-    align-items: center;
 }
 
 nav .main_pages a {
@@ -52,7 +51,7 @@ nav img {
     text-align: center;
     color: var(--primary2);
     font-size: 32px;
-    padding-top: 10vh;
+    padding-top: 5vh;
 }
 
 .titreHome div {
@@ -62,11 +61,20 @@ nav img {
 /***<!-- footer -->***/
 footer {
     color: var(--primary4);
-   padding-top: 30px;
-   margin-left: 20px;
+    margin-left: 20px;
+    display: flex;
+    align-items: center;
+    gap: 32px;
+    justify-content: center;
 }
 
-footer a, i {
+address{
+    display: flex;
+    gap: 32px;
+}
+
+footer a,
+i {
     color: var(--primary4);
 }
 
@@ -88,7 +96,7 @@ main {
 .lacarte div {
     width: 45%;
     margin-left: 20px;
-    
+
 }
 
 .lacarteDesciption {
@@ -96,32 +104,37 @@ main {
     flex-wrap: wrap;
     width: 100%;
 }
-.lacarte h1{
+
+.lacarte h1 {
     padding-top: 20px;
 }
-.lacarte h2, h1{
+
+.lacarte h2,
+h1 {
     width: 100%;
 }
 
 /***<!-- LORIGINE -->***/
-.lorigine{
-    color:var(--primary2);
+.lorigine {
+    color: var(--primary2);
     font-size: 2rem;
     margin-left: 20px;
 }
+
 /***<!-- TELESCOPE -->***/
-.telescope{
+.telescope {
     color: var(--primary2);
     justify-content: center;
     text-align: center;
 }
-.telescope img{
-width: 50%;
+
+.telescope img {
+    width: 50%;
 }
 
 /***<!-- CONSTELLATIONS -->***/
 
-article{
+article {
     width: 100%;
     margin-left: 20px;
     display: flex;
@@ -129,16 +142,78 @@ article{
     color: var(--primary2);
     font-size: 1.5rem;
 }
-.lesconstellations{
+
+.lesconstellations {
 
     display: flex;
     flex-wrap: wrap;
 }
-.lesconstellations img{
-   width: 20%;
+
+.lesconstellations img {
+    width: 20%;
 }
-h2{
+
+h2 {
     color: var(--primary1);
     font-size: 2rem;
     margin-left: 20px;
+}
+
+/*** RESPONSIVE ***/
+/* index */
+@media all and (max-width: 1200px) {
+    .titreHome img{
+        width: 80%;
+    }
+    .titreHome h1{
+        font-size: 1.5rem;
+    }
+    .titreHome p{
+        font-size: 1.5rem;
+    }
+    nav .main_pages a {
+        width: 5%;
+        height: 50px;
+        font-size: 0.8rem;
+    }
+    footer a{
+        font-size: 0.8rem;
+    }
+    footer h3{
+        font-size: 0.8rem;
+    }
+    footer p{
+        font-size: 0.8rem;
+    }
+}
+@media all and (max-width: 900px) {
+    .titreHome img{
+        width: 40%;
+    }
+    .titreHome h3{
+        font-size: 1rem;
+    }
+    .titreHome h1{
+        font-size: 0.8rem;
+    }
+    .titreHome p{
+        font-size: 1.5rem;
+    }
+    nav .main_pages a {
+        width: 50px;
+        height: 50px;
+        font-size: 0.8rem;
+    }
+    footer a{
+        font-size: 0.8rem;
+    }
+    footer h3{
+        font-size: 0.8rem;
+    }
+    footer p{
+        font-size: 0.8rem;
+    }
+    footer p{
+        display: flex;
+    }
 }
